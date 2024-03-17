@@ -1,0 +1,801 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@media (max-width:760px){
+.right li a{
+  font-size: 0.8rem;
+}
+}
+
+@media screen and (max-width:760px){
+  .left .pr_name {
+font-size: 0.8rem;
+  
+  }
+  .left .logo img{
+    height: 79px;
+  }
+}
+
+@media screen and (max-width:510px){
+.right li{
+  display: none;
+}
+}
+@media screen and (max-width:883px){
+  .content .content_Text h3{
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width:883px){
+  .content .content_Img img{
+   height: auto;
+    width: 94%;
+  }
+}
+@media (max-width:883px){
+  .content .content_Img{
+      height: 300px;
+      width: 44%;
+      float: right;
+  }
+  .content .content_Img img{
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
+@media (max-width:1058px){
+  .chart .box .co2 h4{
+    font-size: 0.9rem;
+  }
+  .chart .box .co2_data h3{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:1058px){
+  .chart .box .temp h4{
+    font-size: 0.9rem;
+  }
+  .chart .box .temp_data h3{
+    font-size: 1rem;
+  }
+}
+@media (max-width:1058px){
+  .chart .box .sea h4{
+    font-size: 0.9rem;
+  }
+  .chart .box .sea_data h3{
+    font-size: 1rem;
+  }
+}
+@media (max-width:1058px){
+  .chart .box .ocean h4{
+    font-size: 0.9rem;
+  }
+  .chart .box .ocean_data h3{
+    font-size: 1rem;
+  }
+}
+
+
+
+body{
+    background-color: black;
+}
+.header{
+    /* border: 1px solid #fff; */
+    height: 65px;
+    width: 100%;
+    /* background-color: #4adbab; */
+    /* position: sticky; */
+   
+}
+.left ul{
+   list-style-type: none; 
+   position: relative;
+
+}
+.logo img{
+    height: 90px;
+ margin-left: -50px;
+ margin-top: -25px;
+}
+
+.pr_name{
+    color: #32ca9f;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* margin-left: 50px; */
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.left li{
+    float: left;
+    
+    
+}
+
+.right li{
+    float:right ;
+    list-style-type: none;
+    
+}
+.right li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    
+}
+
+.right li a:hover {
+    background-color: #32ca9f;
+    border-radius: 5px;
+  }
+
+
+.content{
+    /* border: 1px solid #fff; */
+    width: 100%;
+    height: 380px;
+    display: flex;
+    /* overflow: hidden; */
+    /* justify-content: space-around; */
+}
+
+
+.content .content_Text{
+width: 50%;
+height: 380px;
+/* border: 1px solid #fff; */
+overflow: hidden;
+
+} 
+
+
+
+
+.content .content_Text h3{
+    color: #fff;
+     position: relative;
+     overflow: hidden;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin-top: 100px;
+     margin-left: 15px;
+}
+
+.content .content_Text .btns button a{
+    text-decoration: none;
+}
+ .content .content_Text .btns{
+    margin-left: 40px;
+    margin-top: -15px;
+ }
+.content .content_Text .btns button {
+    width: 130px;
+    height: 30px;
+    border: 2px solid #36e2ec;
+    outline: none;
+    border-radius: 20px;
+    background: #4bb5b9;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  
+ .content .content_Text .btns button:hover {
+    background: none;
+    color: #36e2ec;
+  }
+ .content .content_Text .btns button:nth-child(2) {
+    background: none;
+    color: #36e2ec;
+  }
+ .content .content_Text .btns button:nth-child(2):hover {
+    background: #36e2ec;
+    color: #fff;
+  }
+
+
+.content .content_Img{
+  /* border: 1px solid #fff; */
+  height: 380px;
+  width: 48%;
+  float: right;
+  margin-left:15px ;
+ 
+}
+
+.content .content_Img img{
+    width: 100%;
+    height: 100%;
+ 
+    border-radius: 20px;
+}
+
+.Graphs{
+    width: 100%;
+    height: 180px;
+    /* border: 1px solid #fff; */
+    margin-top: 10px;
+}
+
+.Graphs .graphs_heading{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.Graphs .graphs_heading h2{
+   color: #e6f1ef;
+   margin-left: 8px;
+   cursor: pointer;
+}
+
+
+.chart {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+.chart .box {
+    width: 100%; 
+    height: 130px; 
+    /* border: 1px solid #fff; */
+    margin-right: 10px; 
+    overflow: hidden;
+}
+.chart .box .co2{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+    color: #37cab4;
+}
+
+.chart .box .co2_data{
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid #fff; */
+}
+.chart .box .co2_data h3{
+    color: #fff;
+    margin-left: 50px;
+}
+.chart .box .co2_data .ppm{
+     margin-top: -50px;
+    margin-left: 100px;
+
+}
+.chart .box .co2_data .ppm h6{
+     margin-top: -50px;
+    margin-left: 19px;
+    font-weight: 20px;
+    cursor: pointer;
+    
+}
+.chart .box .co2_data .ppm h6:hover{
+   color: #fff;
+   
+}
+.chart .box .co2_graphs button a{
+    text-decoration: none;
+}
+.chart .box .co2_graphs {
+    margin-left: 40px;
+    margin-top: -15px;
+ }
+ .chart .box .co2_graphs button {
+    width: 120px;
+    height: 30px;
+    border: 2px solid #36e2ec;
+    outline: none;
+    border-radius: 10px;
+    background: #4bb5b9;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  
+ .chart .box .co2_graphs  button:hover {
+    background: none;
+    color: #36e2ec;
+  }
+  .chart .box .co2_graphs button:nth-child(2) {
+    background: none;
+    color: #36e2ec;
+  }
+  .chart .box .co2_graphs  button:nth-child(2):hover {
+    background: #36e2ec;
+    color: #fff;
+  }
+
+
+  .chart .box .temp{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+    color: #37cab4;
+}
+.chart .box .temp_data{
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid #fff; */
+}
+.chart .box .temp_data h3{
+    color: #fff;
+    margin-left: 50px;
+}
+.chart .box .temp_data .degree{
+     margin-top: -50px;
+    margin-left: 100px;
+
+}
+.chart .box .temp_data .degree h6{
+     margin-top: -50px;
+    margin-left: 19px;
+    font-weight: 20px;
+    cursor: pointer;
+    
+}
+.chart .box .temp_data .degree h6:hover{
+   color: #fff;
+   
+}
+.chart .box .temp_graphs button a{
+    text-decoration: none;
+}
+.chart .box .temp_graphs {
+    margin-left: 40px;
+    margin-top: -15px;
+ }
+ .chart .box .temp_graphs button {
+    width: 130px;
+    height: 30px;
+    border: 2px solid #36e2ec;
+    outline: none;
+    border-radius: 10px;
+    background: #4bb5b9;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  
+ .chart .box .temp_graphs  button:hover {
+    background: none;
+    color: #36e2ec;
+  }
+  .chart .box .temp_graphs button:nth-child(2) {
+    background: none;
+    color: #36e2ec;
+  }
+  .chart .box .temp_graphs  button:nth-child(2):hover {
+    background: #36e2ec;
+    color: #fff;
+  }
+.chart .box .sea{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+    color: #37cab4;
+}
+.chart .box .sea_data{
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid #fff; */
+}
+.chart .box .sea_data h3{
+    color: #fff;
+    margin-left: 50px;
+}
+.chart .box .sea_data .inches{
+     margin-top: -50px;
+    margin-left: 100px;
+
+}
+.chart .box .sea_data .inches h6{
+     margin-top: -50px;
+    margin-left: 30px;
+    font-weight: 20px;
+    cursor: pointer;
+    
+}
+.chart .box .sea_data .inches h6:hover{
+   color: #fff;
+   
+}
+.chart .box .sea_graphs button a{
+    text-decoration: none;
+}
+.chart .box .sea_graphs {
+    margin-left: 40px;
+    margin-top: -15px;
+ }
+ .chart .box .sea_graphs button {
+    width: 130px;
+    height: 30px;
+    border: 2px solid #36e2ec;
+    outline: none;
+    border-radius: 10px;
+    background: #4bb5b9;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  
+ .chart .box .sea_graphs  button:hover {
+    background: none;
+    color: #36e2ec;
+  }
+  .chart .box .sea_graphs button:nth-child(2) {
+    background: none;
+    color: #36e2ec;
+  }
+  .chart .box .sea_graphs  button:nth-child(2):hover {
+    background: #36e2ec;
+    color: #fff;
+  }
+
+.chart .box .ocean{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+    color: #37cab4;
+}
+
+.chart .box .ocean_data{
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid #fff; */
+}
+.chart .box .ocean_data h3{
+    color: #fff;
+    margin-left: 50px;
+}
+.chart .box .ocean_data .joule{
+     margin-top: -50px;
+    margin-left: 100px;
+
+}
+.chart .box .ocean_data .joule h6{
+     margin-top: -50px;
+    margin-left: 27px;
+    font-weight: 20px;
+    cursor: pointer;
+    
+}
+.chart .box .ocean_data .joule h6:hover{
+   color: #fff;
+   
+}
+.chart .box .ocean_graphs button a{
+    text-decoration: none;
+}
+.chart .box .ocean_graphs {
+    margin-left: 40px;
+    margin-top: -15px;
+ }
+ .chart .box .ocean_graphs button {
+    width: 130px;
+    height: 30px;
+    border: 2px solid #36e2ec;
+    outline: none;
+    border-radius: 10px;
+    background: #4bb5b9;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  
+ .chart .box .ocean_graphs  button:hover {
+    background: none;
+    color: #36e2ec;
+  }
+  .chart .box .ocean_graphs button:nth-child(2) {
+    background: none;
+    color: #36e2ec;
+  }
+  .chart .box .ocean_graphs  button:nth-child(2):hover {
+    background: #36e2ec;
+    color: #fff;
+  }
+
+
+
+.facts{
+    /* border: 1px solid #fff; */
+    width: 100%;
+    height: 400px;
+    /* background-color: #d4d8d3; */
+}
+
+.facts_heading{
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid #fff; */
+
+
+}
+.facts_heading h2{
+    color: #dee5e2;
+    margin-top: 12px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.factss{
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: space-around; 
+}
+
+
+.factss .dataa {
+    width: 100%; 
+    height: 330px; 
+    /* border: 1px solid #fff; */
+    margin-right: 10px; 
+}
+.dataa .dataa_img{
+    width: 100%;
+    height: 75%;
+}
+.dataa img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dataa .dataa_text{
+    width: 100%;
+    height: 25%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: center;
+}
+.dataa .dataa_text h4{
+    color: #36e2ec;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   text-align: center;
+   cursor: pointer;
+}
+
+.Disaster{
+    /* border: 1px solid #fff; */
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+   
+}
+
+ .disaster_heading{
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid #fff; */
+} 
+
+ .disaster_heading h2{
+  color: #e6f1ef;
+  margin-left: 10px;
+}
+
+ .di{
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid #fff; */
+  display: flex;
+  justify-content: space-around;
+
+
+}
+.di .di_box{
+  /* border: 1px solid #fff; */
+  width: 100%;
+  height: 300px;
+  margin-right: 10px;
+
+
+}
+ .di_box .di_img{
+  width: 100%;
+  height: 85%;
+
+}
+.di_box img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+}
+.di_box .di_text{
+  width: 100%;
+  height: 15%;
+  /* border: 1px solid #fff; */
+}
+.di_box .di_text a{
+ text-decoration: none;
+  
+}
+.di_box .di_text h4{
+  color: #36e2ec;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+
+.plastic{
+  /* border: 1px solid #fff; */
+  width: 100%;
+  height: 450px;
+  margin-top: 10px;
+ 
+}
+
+.plastic .plastic_heading{
+width: 100%;
+height: 50px;
+/* border: 1px solid #fff; */
+} 
+ .plastic_heading h2{
+color: #e6f1ef;
+margin-left: 10px;
+}
+.ha{
+  width: 100%;
+  height: 400px;
+  /* border: 1px solid #fff; */
+  display: flex;
+}
+
+.ha_box{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #fff; */
+}
+
+.ha_box img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin-left: 5px;
+
+}
+.ha_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .container h4{
+        color: #36e2ec;
+ }
+ .container a{
+  /* color: #dce4e4; */
+  text-decoration: none;
+ }
+ .container button {
+  width: 130px;
+  height: 30px;
+  border: 2px solid #36e2ec;
+  outline: none;
+  border-radius: 10px;
+  background: #4bb5b9;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.container  button:hover {
+  background: none;
+  color: #36e2ec;
+}
+.container button:nth-child(2) {
+  background: none;
+  color: #36e2ec;
+}
+.container  button:nth-child(2):hover {
+  background: #36e2ec;
+  color: #fff;
+}
+.chemical{
+  /* border: 1px solid #fff; */
+  width: 100%;
+  height: 350px;
+  margin-top: 20px;
+ 
+}
+
+.chemical_heading{
+width: 100%;
+height: 50px;
+/* border: 1px solid #fff; */
+} 
+
+.chemical_heading h2{
+color: #e6f1ef;
+margin-left: 10px;
+}
+
+.che{
+width: 100%;
+height: 300px;
+/* border: 1px solid #fff; */
+display: flex;
+justify-content: space-around;
+
+
+}
+.che .che_box{
+/* border: 1px solid #fff; */
+width: 100%;
+height: 300px;
+margin-right: 10px;
+
+
+}
+.che_box .che_img{
+width: 100%;
+height: 85%;
+
+}
+.che_box img{
+width: 100%;
+height: 100%;
+border-radius: 10px;
+
+}
+.che_box .che_text{
+width: 100%;
+height: 15%;
+/* border: 1px solid #fff; */
+}
+.che_box .che_text a{
+text-decoration: none;
+
+}
+.che_box .che_text h4{
+color: #36e2ec;
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.footer{
+  width: 100%;
+  height: 200px;
+  /* border: 1px solid #fff; */
+}
+.footer .con{
+  width: 100%;
+  height: 100%;
+}
+.con{
+  background: linear-gradient(300deg, #4bdf95, #41da8d, #a0dede);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+.con img{
+  border-radius: 20px;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

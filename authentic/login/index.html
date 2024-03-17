@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Responsive login</title>
+    <script src="main.js" defer type="module"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+    <div class="content">
+          <div class="form">
+             <h2>Create an account</h2>
+                 <form action="#">
+                        <div class="input">
+                            <span>Name</span>
+                            <input type="text" name="username" required placeholder="First name">
+                        </div>
+                        <div class="input">
+                            <span>Email</span>
+                            <input type="text" name="Email" required placeholder="Enter your Email">
+                        </div>
+                        <div class="input">
+                            <span>Password</span>
+                            <input type="password" name="password" required placeholder="Enter password">
+                        </div>
+                        <div class="remember-me">
+                            <label>
+                                <input type="checkbox"> Remember me?
+                            </label>
+                        </div>
+                        <div class="input">
+                            <input type="submit" value="Submit" id="submit-button">
+                        </div>
+
+                        <div class="input">
+                            <p>Already have an account? <a href="login.html">login</a></p>
+                        </div>
+
+                        <div class="input">
+                            <button id="google-login-btn" class="google-button">
+                                <i class="fab-fa-google"></i>Signin with Google
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>

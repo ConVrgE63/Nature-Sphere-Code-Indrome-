@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Warming</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <style>
+       body{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+      
+       }
+       .ch{
+        width: 80%;
+        height: 560px;
+        border: 2px solid #45e3e0;
+        margin: auto ;
+        margin-top: 50px;
+        /* box-shadow: 50px #c6cbcb; */
+        border-radius: 20px;
+       }
+    </style>
+</head>
+<body>
+    <section class="ch">
+        <div class="graph2">
+            <div class="graph">
+                <canvas id="myChart" width="800" height="400"></canvas>
+                <script>
+                 const xlabels = [];
+                 const ytemps = [];
+                 chartIt();
+             
+                async function chartIt() {
+                const data =  await getData();
+                   const ctx = document.getElementById('myChart').getContext('2d');
+                    const myChart = new Chart(ctx, {
+                 type: 'line',//also change to bar 
+                 data: {
+                     labels: data.xs,
+                     datasets: [{
+                         label: 'Ocean Warming',
+                         data: data.ys,
+                         fill:false, //additional data
+                         backgroundColor: ['rgba(255, 99, 132, 0.2)'],
+                         borderColor: ['rgba(255, 99, 132, 1)'],
+                         borderWidth: 1
+                     }]
+                 },
+                 options: {
+                     scales: {
+                         y: {
+                             ticks: {
+                                 // Include a dollar sign in the ticks
+                                 callback: function(value, index, values) {
+                                     return value;
+                                 }
+                             }
+                         }
+                     }
+                 }
+                
+             });
+                 }
+             
+                
+             
+                async function getData(){
+                 const xs = [];
+                 const ys = [];
+             
+                 const response = await fetch('ocean.csv');
+                 const data = await response.text();
+             
+                 const table = data.split('\n').slice(1);
+                 table.forEach(row=>{
+                     const columns = row.split(',');
+                     const year = columns[0];
+                     xs.push(year);
+                     const temp = columns[1];
+                     ys.push(temp); //parsefloat is global java script function
+                     console.log(year,temp);
+                 });
+                 return { xs , ys};
+                }
+             
+             
+             
+             
+             </script>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

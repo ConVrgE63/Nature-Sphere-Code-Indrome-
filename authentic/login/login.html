@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Responsive login</title>
+    <script src="main.js" defer type="module"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>
+      <div class="content">
+        <div class="form">
+          <h2>login</h2>
+          <form action="#">
+            <div class="input">
+              <span>Email</span>
+              <input
+                type="text"
+                name="Email"
+                required
+                placeholder="Enter your Email"
+              />
+            </div>
+            <div class="input">
+              <span>Password</span>
+              <input
+                type="password"
+                name="password"
+                required
+                placeholder="Enter password"
+              />
+            </div>
+            <div class="remember-me">
+              <label> <input type="checkbox" /> Remember me? </label>
+            </div>
+            <div class="input">
+              <input type="submit" value="Submit" id="submit-button" />
+            </div>
+
+            <div class="input">
+              <p>Don't have an account <a href="index.html">Sign Up</a></p>
+            </div>
+
+            <div class="input">
+              <button id="google-login-btn" class="google-button">
+                <i class="fab-fa-google"></i>Signin with Google
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

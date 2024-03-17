@@ -1,0 +1,54 @@
+/*
+layouts from the bootstrap example section of HEROES for header part
+Next FEATURES
+next JUMBOTRONS
+next PRICING PLAN
+Next FOOTERS
+
+
+we change the code in buttom class from (primary) to (light)  
+and (secondary) to (light)
+
+<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+p stand for padding 
+y stands for y axis
+
+<div class="container mt-3">
+mt - means margin top
+
+<div class="col-lg-3 col-sm-12">
+here col-lg-3 means large col and three in large screen like laptop
+col-sm-12 means 12 small col for mobile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
