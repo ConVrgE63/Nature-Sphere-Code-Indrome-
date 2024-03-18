@@ -31,6 +31,14 @@ Firebase Authentication:
 News API for Climate News:
  The News API integration fetches climate-related news articles and updates to keep users informed about environmental issues, initiatives, and developments.
 
+ Getting Started 
+ use Node.js npm installation for creating Api for Phonepe 
+ Use of News Api for News Fetching 
+ use of firebase for Google login page
+const API_KEY = 'ENTER YOUR API';
+created link attached with my Nature Sphere Website
+ 
+
 PhonePe API for Online Payment:
  Integration with the PhonePe API enables seamless online payment processing within the web application, facilitating donations or subscription payments for eco-friendly initiatives 
 
