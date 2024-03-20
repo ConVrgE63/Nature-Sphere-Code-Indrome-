@@ -1,7 +1,4 @@
-Team Name - Eco Explorer
-MD AADIL RIZWAN (Team Leader)
-Kartikey Jaiswal(Member 1)
-Divyansh Agrawal (Member 2)
+
 
 
 TECHSTACKS USED
